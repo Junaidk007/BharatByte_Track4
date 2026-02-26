@@ -1,8 +1,8 @@
 # bharatBytes
 <hr>
-## Team Name - BharatBytes
-## Lead Name - Junaid Khan
-## Track - 5 (Track 5: AI & Data Science)
-## Problem Statement - P.S. 15 (Open Innovation - Build for Bharat)
-## Project Name - AI-Based Government Scheme Recommendation System
-## Member Name - Kanchan Kapri
+<b>Team Name</b> - BharatBytes <br>
+<b>Lead Name</b> - Junaid Khan<br>
+<b>Track</b> - 5 (Track 5: AI & Data Science)<br>
+<b>Problem Statement</b> - P.S. 15 (Open Innovation - Build for Bharat)<br>
+<b>Project Name</b> - AI-Based Government Scheme Recommendation System<br>
+<b>Member Name</b> - Kanchan Kapri
