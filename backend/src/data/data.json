@@ -1,0 +1,382 @@
+[
+  {
+    "id": 1,
+    "name": {
+      "english": "Ayushman Bharat – Pradhan Mantri Jan Arogya Yojana",
+      "hinglish": "Ayushman Bharat – PM Jan Arogya Yojana",
+      "hindi": "आयुष्मान भारत – प्रधानमंत्री जन आरोग्य योजना"
+    },
+    "description": {
+      "english": "A flagship public health insurance scheme that provides cashless hospitalization coverage of up to ₹5 lakh per family per year for secondary and tertiary care at empanelled hospitals, with special focus on economically vulnerable households.",
+      "hinglish": "Yeh ek badi sarkari health insurance yojana hai jo arthik roop se kamzor parivaron ko empanelled hospitals me secondary aur tertiary treatment ke liye har saal parivar ke hisab se ₹5 lakh tak cashless hospitalization cover deti hai.",
+      "hindi": "यह एक प्रमुख सरकारी स्वास्थ्य बीमा योजना है, जो आर्थिक रूप से कमजोर परिवारों को सूचीबद्ध अस्पतालों में द्वितीयक और तृतीयक उपचार के लिए प्रति परिवार प्रति वर्ष ₹5 लाख तक का कैशलेस अस्पताल कवरेज प्रदान करती है।"
+    },
+    "benefits": {
+      "english": "Coverage up to ₹5 lakh per family per year; cashless treatment at empanelled hospitals; support for major hospitalization expenses and surgeries.",
+      "hinglish": "Har saal parivar ke liye ₹5 lakh tak cover; empanelled hospitals me cashless treatment; bade hospital kharche aur surgeries me madad.",
+      "hindi": "प्रति परिवार प्रति वर्ष ₹5 लाख तक कवरेज; सूचीबद्ध अस्पतालों में कैशलेस उपचार; बड़े अस्पताल खर्च और सर्जरी में सहायता।"
+    },
+    "eligibility": {
+      "english": "Families listed under SECC or as specified by government criteria.",
+      "hinglish": "Jo parivaar SECC list me hain.",
+      "hindi": "जो परिवार SECC सूची में शामिल हैं।"
+    },
+    "applicationProcess": {
+      "english": "Check eligibility and enroll through the official PM‑JAY portal.",
+      "hinglish": "Official portal par eligibility check karke enroll karein.",
+      "hindi": "आधिकारिक पोर्टल पर पात्रता जांचकर नामांकन करें।",
+      "Link": "https://pmjay.gov.in/"
+    },
+    "documentsRequired": {
+      "english": ["Aadhaar Card", "Ration Card"],
+      "hinglish": ["Aadhaar", "Ration Card"],
+      "hindi": ["आधार कार्ड", "राशन कार्ड"]
+    },
+    "sector": "Health",
+    "incomeLimit": 500000,
+    "minAge": 0,
+    "occupation": ["All"]
+  },
+  {
+    "id": 2,
+    "name": {
+      "english": "Pradhan Mantri Kisan Samman Nidhi (PM‑Kisan)",
+      "hinglish": "PM‑Kisan Samman Nidhi",
+      "hindi": "प्रधानमंत्री किसान सम्मान निधि"
+    },
+    "description": {
+      "english": "A direct benefit transfer scheme that provides assured income support to eligible small and marginal farmers, helping them manage seasonal agricultural expenses and improve financial stability throughout the year.",
+      "hinglish": "Yeh direct benefit transfer yojana eligible chhote aur seemant kisanon ko nishchit aay sahayata deti hai, jisse kheti ke mausami kharche sambhalne aur saal bhar financial stability banaye rakhne me madad milti hai.",
+      "hindi": "यह प्रत्यक्ष लाभ अंतरण योजना पात्र छोटे और सीमांत किसानों को सुनिश्चित आय सहायता प्रदान करती है, जिससे वे खेती के मौसमी खर्चों को संभालकर पूरे वर्ष अपनी वित्तीय स्थिरता बेहतर कर सकें।"
+    },
+    "benefits": {
+      "english": "₹6,000 annual income support in three installments; direct transfer to bank account; helps manage seeds, fertilizer, and seasonal farm expenses.",
+      "hinglish": "Saalana ₹6,000 teen kisto me; paisa seedha bank account me; beej, khaad aur mausami kheti kharche sambhalne me madad.",
+      "hindi": "वार्षिक ₹6,000 की सहायता तीन किस्तों में; राशि सीधे बैंक खाते में; बीज, उर्वरक और मौसमी खेती खर्चों में मदद।"
+    },
+    "eligibility": {
+      "english": "Small and marginal farmers with cultivable land.",
+      "hinglish": "Kheti ki zameen wale chhote kisan.",
+      "hindi": "खेती योग्य भूमि वाले छोटे किसान।"
+    },
+    "applicationProcess": {
+      "english": "Apply through state agriculture department or official PM‑Kisan portal.",
+      "hinglish": "Krishi vibhag ya PM‑Kisan portal se apply karein.",
+      "hindi": "कृषि विभाग या पीएम‑किसान पोर्टल से आवेदन करें।",
+      "Link": "https://pmkisan.gov.in/"
+    },
+    "documentsRequired": {
+      "english": ["Aadhaar", "Land Records", "Bank Account Details"],
+      "hinglish": ["Aadhaar", "Zameen ke kagaz", "Bank details"],
+      "hindi": ["आधार", "भूमि रिकॉर्ड", "बैंक विवरण"]
+    },
+    "sector": "Agriculture",
+    "incomeLimit": 800000,
+    "minAge": 18,
+    "occupation": ["Farmer"]
+  },
+  {
+    "id": 3,
+    "name": {
+      "english": "Pradhan Mantri Awas Yojana (PMAY)",
+      "hinglish": "PM Awas Yojana",
+      "hindi": "प्रधानमंत्री आवास योजना"
+    },
+    "description": {
+      "english": "An affordable housing initiative that supports eligible EWS, LIG, and MIG families by offering interest subsidy on home loans, reducing overall repayment burden and encouraging ownership of safe, permanent housing.",
+      "hinglish": "Yeh affordable housing initiative eligible EWS, LIG aur MIG parivaron ko home loan par interest subsidy dekar total repayment burden kam karta hai aur surakshit, pakka ghar kharidne ko badhava deta hai.",
+      "hindi": "यह किफायती आवास पहल पात्र ईडब्ल्यूएस, एलआईजी और एमआईजी परिवारों को गृह ऋण पर ब्याज सब्सिडी देकर कुल पुनर्भुगतान बोझ कम करती है और सुरक्षित, पक्का घर स्वामित्व को बढ़ावा देती है।"
+    },
+    "benefits": {
+      "english": "Interest subsidy on eligible home loans; reduced EMI burden over loan tenure; support for buying or constructing affordable pucca housing.",
+      "hinglish": "Eligible home loan par interest subsidy; loan tenure me EMI burden kam; affordable pakka ghar kharidne ya banane me support.",
+      "hindi": "पात्र गृह ऋण पर ब्याज सब्सिडी; ऋण अवधि में ईएमआई बोझ कम; किफायती पक्का घर खरीदने या बनाने में सहायता।"
+    },
+    "eligibility": {
+      "english": "Beneficiaries should fulfill income and ownership criteria as given by PMAY rules.",
+      "hinglish": "Income aur property criteria meet karein.",
+      "hindi": "आय और संपत्ति मानदंड पूरा करें।"
+    },
+    "applicationProcess": {
+      "english": "Apply through bank or official PMAY portal.",
+      "hinglish": "Bank ya PMAY portal par apply karein.",
+      "hindi": "बैंक या पीएमएवाई पोर्टल पर आवेदन करें।",
+      "Link": "https://pmaymis.gov.in/"
+    },
+    "documentsRequired": {
+      "english": ["Income Proof", "Aadhaar", "Loan Documents"],
+      "hinglish": ["Income proof", "Aadhaar", "Loan kagaz"],
+      "hindi": ["आय प्रमाण", "आधार", "ऋण दस्तावेज"]
+    },
+    "sector": "Housing",
+    "incomeLimit": 600000,
+    "minAge": 21,
+    "occupation": ["All"]
+  },
+  {
+    "id": 4,
+    "name": {
+      "english": "Pradhan Mantri Jan Dhan Yojana (PMJDY)",
+      "hinglish": "PM Jan Dhan Yojana",
+      "hindi": "प्रधानमंत्री जन धन योजना"
+    },
+    "description": {
+      "english": "A financial inclusion scheme designed to ensure universal access to basic banking facilities such as savings accounts, remittance, credit, insurance, and pension services, especially for people previously outside the formal banking system.",
+      "hinglish": "Yeh financial inclusion yojana har nagrik ko basic banking facilities jaise savings account, remittance, credit, insurance aur pension services tak pahunch dene ke liye banayi gayi hai, khas kar un logon ke liye jo pehle formal banking system se bahar the.",
+      "hindi": "यह वित्तीय समावेशन योजना सभी नागरिकों को बचत खाता, धन प्रेषण, ऋण, बीमा और पेंशन जैसी बुनियादी बैंकिंग सुविधाओं तक पहुंच दिलाने के लिए बनाई गई है, विशेष रूप से उन लोगों के लिए जो पहले औपचारिक बैंकिंग प्रणाली से बाहर थे।"
+    },
+    "benefits": {
+      "english": "Zero-balance savings account; access to basic banking and DBT credit; overdraft eligibility and linked insurance/pension inclusion support.",
+      "hinglish": "Zero-balance savings account; basic banking aur DBT ka access; overdraft eligibility ke saath insurance/pension inclusion ka support.",
+      "hindi": "शून्य-बैलेंस बचत खाता; बुनियादी बैंकिंग और डीबीटी का लाभ; ओवरड्राफ्ट पात्रता के साथ बीमा/पेंशन समावेशन सहायता।"
+    },
+    "eligibility": {
+      "english": "Any Indian citizen without an existing bank account.",
+      "hinglish": "Bina bank account wale sabhi citizens.",
+      "hindi": "बिना बैंक खाता वाले सभी नागरिक।"
+    },
+    "applicationProcess": {
+      "english": "Open an account at any participating bank branch.",
+      "hinglish": "Bank branch par account kholen.",
+      "hindi": "बैंक शाखा में खाता खोलें।",
+      "Link": "https://pmjdy.gov.in/"
+    },
+    "documentsRequired": {
+      "english": ["Aadhaar", "KYC Documents"],
+      "hinglish": ["Aadhaar", "KYC Documents"],
+      "hindi": ["आधार", "KYC दस्तावेज"]
+    },
+    "sector": "Finance",
+    "incomeLimit": null,
+    "minAge": 18,
+    "occupation": ["All"]
+  },
+  {
+    "id": 5,
+    "name": {
+      "english": "Pradhan Mantri Mudra Yojana (PMMY)",
+      "hinglish": "PM Mudra Yojana",
+      "hindi": "प्रधानमंत्री मुद्रा योजना"
+    },
+    "description": {
+      "english": "A credit support scheme that enables non-corporate, non-farm micro and small enterprises to access collateral-free business loans up to ₹10 lakh, helping entrepreneurs start, sustain, and expand income-generating activities.",
+      "hinglish": "Yeh credit support yojana non-corporate aur non-farm micro/small enterprises ko ₹10 lakh tak collateral-free business loan deti hai, jisse udyami apna kaam shuru, chaloo aur expand kar sakte hain.",
+      "hindi": "यह ऋण सहायता योजना गैर-कॉर्पोरेट, गैर-कृषि सूक्ष्म और लघु उद्यमों को ₹10 लाख तक बिना जमानत व्यापार ऋण उपलब्ध कराती है, जिससे उद्यमी अपने व्यवसाय को शुरू, संचालित और विस्तारित कर सकें।"
+    },
+    "benefits": {
+      "english": "Business loans up to ₹10 lakh under categories for different stages; collateral-free support for micro enterprises; helps start, expand, and stabilize small businesses.",
+      "hinglish": "Alag stages ke liye categories me ₹10 lakh tak business loan; micro enterprises ko collateral-free support; business shuru, badhane aur stable karne me madad.",
+      "hindi": "विभिन्न चरणों के लिए श्रेणियों में ₹10 लाख तक व्यापार ऋण; सूक्ष्म उद्यमों को बिना जमानत सहायता; व्यवसाय शुरू, विस्तार और स्थिरता में मदद।"
+    },
+    "eligibility": {
+      "english": "Small business owners and proprietors.",
+      "hinglish": "Chhote business owners.",
+      "hindi": "छोटे व्यवसाय के मालिक।"
+    },
+    "applicationProcess": {
+      "english": "Apply through banks or NBFCs participating in PMMY.",
+      "hinglish": "Bank/NBFC se apply karein.",
+      "hindi": "बैंक/एनबीएफसी से आवेदन करें।",
+      "Link": "https://www.udyamimitra.in/"
+    },
+    "documentsRequired": {
+      "english": ["Business Proof", "PAN", "Aadhaar"],
+      "hinglish": ["Business proof", "PAN", "Aadhaar"],
+      "hindi": ["व्यवसाय प्रमाण", "पैन कार्ड", "आधार"]
+    },
+    "sector": "MSME",
+    "incomeLimit": 2000000,
+    "minAge": 21,
+    "occupation": ["Business"]
+  },
+  {
+    "id": 6,
+    "name": {
+      "english": "Atal Pension Yojana (APY)",
+      "hinglish": "Atal Pension Yojana",
+      "hindi": "अटल पेंशन योजना"
+    },
+    "description": {
+      "english": "A government-backed pension program for workers in the unorganized sector that encourages regular contributions during working years and provides a guaranteed monthly pension after the age of 60 for old-age income security.",
+      "hinglish": "Yeh sarkari pension program unorganized sector ke workers ke liye hai, jisme kaam ke dauran regular contribution karke 60 saal ke baad guaranteed monthly pension milti hai aur budhape me income security banti hai.",
+      "hindi": "यह सरकार समर्थित पेंशन कार्यक्रम असंगठित क्षेत्र के कामगारों के लिए है, जिसमें कार्यकाल के दौरान नियमित अंशदान करने पर 60 वर्ष की आयु के बाद सुनिश्चित मासिक पेंशन मिलती है और वृद्धावस्था में आय सुरक्षा मिलती है।"
+    },
+    "benefits": {
+      "english": "Guaranteed monthly pension after 60 based on chosen plan; long-term social security for unorganized workers; encourages disciplined retirement savings.",
+      "hinglish": "Chune hue plan ke hisab se 60 ke baad guaranteed monthly pension; unorganized workers ke liye long-term social security; retirement savings ki habit ko badhava.",
+      "hindi": "चुनी गई योजना के अनुसार 60 वर्ष के बाद सुनिश्चित मासिक पेंशन; असंगठित कामगारों के लिए दीर्घकालीन सामाजिक सुरक्षा; नियमित सेवानिवृत्ति बचत को प्रोत्साहन।"
+    },
+    "eligibility": {
+      "english": "Citizen aged 18–40 with savings bank account.",
+      "hinglish": "18–40 saal aur bank account.",
+      "hindi": "18–40 वर्ष और बैंक खाता।"
+    },
+    "applicationProcess": {
+      "english": "Enroll through bank or post office branches.",
+      "hinglish": "Bank/post office se enroll karein.",
+      "hindi": "बैंक/डाकघर से नामांकन करें।",
+      "Link": "https://www.npscra.nsdl.co.in/"
+    },
+    "documentsRequired": {
+      "english": ["Aadhaar", "Savings account"],
+      "hinglish": ["Aadhaar", "Savings account"],
+      "hindi": ["आधार", "बचत खाता"]
+    },
+    "sector": "Social Security",
+    "incomeLimit": null,
+    "minAge": 18,
+    "occupation": ["All"]
+  },
+  {
+    "id": 7,
+    "name": {
+      "english": "Pradhan Mantri Suraksha Bima Yojana (PMSBY)",
+      "hinglish": "PM Suraksha Bima Yojana",
+      "hindi": "प्रधानमंत्री सुरक्षा बीमा योजना"
+    },
+    "description": {
+      "english": "A low-cost accidental insurance scheme that offers financial protection against accidental death and disability, making risk coverage affordable and accessible for a large section of bank account holders.",
+      "hinglish": "Yeh low-cost accidental insurance yojana accident se mrityu ya viklangta ki sthiti me financial protection deti hai, jisse kam premium me zyada logon ke liye risk cover accessible ho jata hai.",
+      "hindi": "यह कम लागत वाली दुर्घटना बीमा योजना दुर्घटनाजनित मृत्यु या विकलांगता की स्थिति में वित्तीय सुरक्षा प्रदान करती है, जिससे कम प्रीमियम पर अधिक लोगों के लिए जोखिम कवरेज सुलभ हो जाता है।"
+    },
+    "benefits": {
+      "english": "₹2 lakh accidental insurance cover for death or disability; low annual premium with auto-debit convenience; financial protection for families during emergencies.",
+      "hinglish": "Accidental death/disability par ₹2 lakh cover; low annual premium aur auto-debit convenience; emergency me family ko financial protection.",
+      "hindi": "दुर्घटनाजनित मृत्यु या विकलांगता पर ₹2 लाख बीमा कवर; कम वार्षिक प्रीमियम और ऑटो-डेबिट सुविधा; आपात स्थिति में परिवार को वित्तीय सुरक्षा।"
+    },
+    "eligibility": {
+      "english": "Aadhaar‑linked savings account holders aged 18–70.",
+      "hinglish": "18‑70 saal aur Aadhaar linked bank account.",
+      "hindi": "18‑70 वर्ष और आधार लिंक्ड बैंक खाता।"
+    },
+    "applicationProcess": {
+      "english": "Enroll through bank with auto‑debit consent.",
+      "hinglish": "Bank me auto‑debit ke saath enroll kare.",
+      "hindi": "बैंक में ऑटो‑डेबिट के साथ नामांकन करें।",
+      "Link": "https://jansuraksha.gov.in/"
+    },
+    "documentsRequired": {
+      "english": ["Aadhaar", "Bank account"],
+      "hinglish": ["Aadhaar", "Bank account"],
+      "hindi": ["आधार", "बैंक खाता"]
+    },
+    "sector": "Insurance",
+    "incomeLimit": null,
+    "minAge": 18,
+    "occupation": ["All"]
+  },
+  {
+    "id": 8,
+    "name": {
+      "english": "Pradhan Mantri Jeevan Jyoti Bima Yojana (PMJJBY)",
+      "hinglish": "PM Jeevan Jyoti Bima Yojana",
+      "hindi": "प्रधानमंत्री जीवन ज्योति बीमा योजना"
+    },
+    "description": {
+      "english": "An affordable annual life insurance scheme that provides a fixed life cover of ₹2 lakh to enrolled account holders, helping families receive financial support in case of the insured member’s death.",
+      "hinglish": "Yeh affordable annual life insurance yojana enrolled account holders ko ₹2 lakh ka fixed life cover deti hai, taaki insured vyakti ki mrityu ki sthiti me parivar ko arthik sahayata mil sake.",
+      "hindi": "यह किफायती वार्षिक जीवन बीमा योजना पंजीकृत खाताधारकों को ₹2 लाख का निश्चित जीवन कवर देती है, ताकि बीमित सदस्य की मृत्यु होने पर परिवार को वित्तीय सहायता मिल सके।"
+    },
+    "benefits": {
+      "english": "₹2 lakh life insurance cover at affordable annual premium; simple enrollment through bank account; financial support to nominee in case of death of insured member.",
+      "hinglish": "Affordable annual premium par ₹2 lakh life cover; bank account ke through simple enrollment; insured member ki death par nominee ko financial support.",
+      "hindi": "किफायती वार्षिक प्रीमियम पर ₹2 लाख जीवन बीमा कवर; बैंक खाते के माध्यम से सरल नामांकन; बीमित सदस्य की मृत्यु पर नामित व्यक्ति को वित्तीय सहायता।"
+    },
+    "eligibility": {
+      "english": "Aadhaar‑linked savings account holders aged 18–50.",
+      "hinglish": "18‑50 saal aur Aadhaar linked bank account.",
+      "hindi": "18‑50 वर्ष और आधार लिंक्ड बैंक खाता।"
+    },
+    "applicationProcess": {
+      "english": "Enroll through bank with consent.",
+      "hinglish": "Bank me enroll karein.",
+      "hindi": "बैंक में नामांकन करें।",
+      "Link": "https://jansuraksha.gov.in/"
+    },
+    "documentsRequired": {
+      "english": ["Aadhaar", "Bank account"],
+      "hinglish": ["Aadhaar", "Bank account"],
+      "hindi": ["आधार", "बैंक खाता"]
+    },
+    "sector": "Insurance",
+    "incomeLimit": null,
+    "minAge": 18,
+    "occupation": ["All"]
+  },
+  {
+    "id": 9,
+    "name": {
+      "english": "National Scholarship Schemes (NSP)",
+      "hinglish": "National Scholarship Schemes",
+      "hindi": "राष्ट्रीय छात्रवृत्ति योजनाएं"
+    },
+    "description": {
+      "english": "A consolidated scholarship framework that supports eligible students through merit-based and need-based financial assistance, helping reduce education costs and improve continuity in school, college, and higher studies.",
+      "hinglish": "Yeh consolidated scholarship framework eligible students ko merit-based aur need-based financial assistance deta hai, jisse padhai ka kharcha kam hota hai aur school, college aur higher studies me continuity bani rehti hai.",
+      "hindi": "यह समेकित छात्रवृत्ति ढांचा पात्र विद्यार्थियों को योग्यता-आधारित और आवश्यकता-आधारित वित्तीय सहायता प्रदान करता है, जिससे शिक्षा लागत कम होती है और स्कूल, कॉलेज तथा उच्च शिक्षा में निरंतरता बनी रहती है।"
+    },
+    "benefits": {
+      "english": "Scholarship support for tuition and related education expenses; merit- and income-linked assistance for eligible students; helps reduce dropout risk and continue higher studies.",
+      "hinglish": "Tuition aur padhai ke related kharch ke liye scholarship support; eligible students ko merit aur income basis par sahayata; dropout risk kam karke higher studies continue karne me madad.",
+      "hindi": "ट्यूशन और संबंधित शिक्षा खर्चों के लिए छात्रवृत्ति सहायता; पात्र छात्रों को योग्यता और आय-आधारित सहयोग; पढ़ाई छोड़ने का जोखिम कम कर उच्च शिक्षा जारी रखने में मदद।"
+    },
+    "eligibility": {
+      "english": "Students meeting academic and income criteria.",
+      "hinglish": "Achhe marks aur kam income wale students.",
+      "hindi": "अच्छे अंक और कम आय वाले छात्र।"
+    },
+    "applicationProcess": {
+      "english": "Apply online through the National Scholarship Portal.",
+      "hinglish": "NSP portal se online apply karein.",
+      "hindi": "राष्ट्रीय छात्रवृत्ति पोर्टल पर ऑनलाइन आवेदन करें।",
+      "Link": "https://scholarships.gov.in/"
+    },
+    "documentsRequired": {
+      "english": ["Aadhaar", "Income certificate", "Marksheet"],
+      "hinglish": ["Aadhaar", "Income certificate", "Marksheet"],
+      "hindi": ["आधार", "आय प्रमाण पत्र", "मार्कशीट"]
+    },
+    "sector": "Education",
+    "incomeLimit": 800000,
+    "minAge": 10,
+    "occupation": ["Student"]
+  },
+  {
+    "id": 10,
+    "name": {
+      "english": "PM KUSUM Scheme (Solar Pumps & Renewable)",
+      "hinglish": "PM KUSUM Scheme",
+      "hindi": "पीएम कुशल (कुसुम) योजना"
+    },
+    "description": {
+      "english": "A renewable energy promotion scheme for farmers that supports installation of solar pumps and decentralized solar power systems through substantial subsidies, helping lower irrigation costs and reduce dependence on conventional energy sources.",
+      "hinglish": "Yeh renewable energy promotion yojana kisanon ko solar pumps aur decentralized solar power systems lagane ke liye uchit subsidy deti hai, jisse sinchai ka kharcha kam hota hai aur paramparik urja sroton par nirbharata ghatti hai.",
+      "hindi": "यह किसानों के लिए नवीकरणीय ऊर्जा प्रोत्साहन योजना है, जो सोलर पंप और विकेन्द्रीकृत सौर ऊर्जा प्रणालियों की स्थापना पर पर्याप्त सब्सिडी देती है, जिससे सिंचाई लागत घटती है और पारंपरिक ऊर्जा स्रोतों पर निर्भरता कम होती है।"
+    },
+    "benefits": {
+      "english": "Subsidy support for solar irrigation pumps and renewable setups; lower recurring diesel/electricity costs for farmers; promotes clean energy use in agriculture.",
+      "hinglish": "Solar irrigation pumps aur renewable setups par subsidy support; kisanon ka diesel/electricity recurring cost kam; kheti me clean energy ko badhava.",
+      "hindi": "सौर सिंचाई पंप और नवीकरणीय प्रणालियों पर सब्सिडी सहायता; किसानों की डीजल/बिजली की नियमित लागत कम; कृषि में स्वच्छ ऊर्जा उपयोग को बढ़ावा।"
+    },
+    "eligibility": {
+      "english": "Farmers interested in solar irrigation pumps & sustainable energy.",
+      "hinglish": "Solar pumps lene wale kisan.",
+      "hindi": "सौर पंप लेने वाले किसान।"
+    },
+    "applicationProcess": {
+      "english": "Apply online through agricultural renewable energy portals.",
+      "hinglish": "Agriculture portal se apply karein.",
+      "hindi": "कृषि पोर्टल से आवेदन करें।",
+      "Link": "https://pmkusum.mnre.gov.in/"
+    },
+    "documentsRequired": {
+      "english": ["Land Records", "Aadhaar", "Bank details"],
+      "hinglish": ["Zameen ke kagaz", "Aadhaar", "Bank details"],
+      "hindi": ["भूमि रिकॉर्ड", "आधार", "बैंक विवरण"]
+    },
+    "sector": "Agriculture & Renewable",
+    "incomeLimit": 1000000,
+    "minAge": 18,
+    "occupation": ["Farmer"]
+  }
+]
