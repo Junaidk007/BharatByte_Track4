@@ -1,0 +1,124 @@
+.scheme-card-min {
+  width: 100%;
+  max-width: 308px;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  padding: 12px 14px 10px;
+  box-shadow: var(--card-shadow);
+}
+
+.scheme-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 9px;
+}
+
+.rank-badge {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: #f5c16a;
+  color: #3f3a33;
+  font-size: 16px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.scheme-head h3 {
+  margin: 0;
+  color: var(--card-title);
+  font-size: 19px;
+  line-height: 1.18;
+  font-weight: 800;
+}
+
+.category-pill {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  margin: 0 0 12px;
+  padding: 0 12px;
+  border-radius: 999px;
+  background: #d8efdf;
+  color: #1a8a4c;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.score-wrap {
+  margin-bottom: 11px;
+}
+
+.score-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--card-text);
+  font-size: 17px;
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+.score-row strong {
+  color: #169b4a;
+  font-weight: 800;
+}
+
+.score-bar {
+  margin-top: 7px;
+  height: 7px;
+  border-radius: 999px;
+  background: #e5e7eb;
+  overflow: hidden;
+}
+
+.score-bar span {
+  display: block;
+  height: 100%;
+  background: #139943;
+  border-radius: 999px;
+}
+
+.benefit-list {
+  margin: 0 0 10px;
+  padding-left: 18px;
+}
+
+.benefit-list li {
+  margin-bottom: 4px;
+  color: var(--muted-text);
+  font-size: 17px;
+  line-height: 1.25;
+  font-weight: 500;
+}
+
+.benefit-list li::marker {
+  color: #169846;
+}
+
+.details-btn {
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  min-height: 38px;
+  background: #0d9543;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 1;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.details-btn:hover {
+  background: #0b863c;
+}
+
+@media (max-width: 640px) {
+  .scheme-card-min {
+    max-width: 100%;
+  }
+}

@@ -1,33 +1,81 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import Navbar from './components/Navbar'
+import Footer from './components/Footer'
+import Hero from './pages/Hero'
+import Content from './pages/Content'
+import { useEffect, useState } from 'react'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [schemes, setSchemes] = useState([])
+  const [isLoading, setIsLoading] = useState(false)
+  const [error, setError] = useState('')
+  const [hasSubmitted, setHasSubmitted] = useState(false)
+  const [language, setLanguage] = useState('english')
+  const [theme, setTheme] = useState(() => {
+    const savedTheme = localStorage.getItem('theme')
+    return savedTheme === 'dark' ? 'dark' : 'light'
+  })
+
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme)
+    localStorage.setItem('theme', theme)
+  }, [theme])
+
+  const handleSearch = async (payload) => {
+    try {
+      setHasSubmitted(true)
+      setIsLoading(true)
+      setError('')
+
+      const response = await fetch('http://localhost:8080/api/schemes', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(payload),
+      })
+
+      if (!response.ok) {
+        throw new Error('Failed to fetch schemes')
+      }
+
+      const data = await response.json()
+      setSchemes(data.recommendedSchemes || [])
+    } catch (apiError) {
+      console.error('API error:', apiError)
+      setSchemes([])
+      setError('Could not fetch schemes. Please try again.')
+    } finally {
+      setIsLoading(false)
+    }
+  }
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Navbar
+        language={language}
+        onLanguageChange={setLanguage}
+        theme={theme}
+        onToggleTheme={() =>
+          setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'))
+        }
+      />
+      <main>
+        <Hero
+          onSearch={handleSearch}
+          language={language}
+          isFullHeight={!hasSubmitted}
+        />
+        {hasSubmitted && (
+          <Content
+            schemes={schemes}
+            isLoading={isLoading}
+            error={error}
+            language={language}
+          />
+        )}
+      </main>
+      {/* <Footer language={language} /> */}
     </>
   )
 }
