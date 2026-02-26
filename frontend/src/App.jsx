@@ -27,7 +27,7 @@ function App() {
       setIsLoading(true)
       setError('')
 
-      const response = await fetch('http://localhost:8080/api/schemes', {
+      const response = await fetch('http://localhost:8080/api/recommendations', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
