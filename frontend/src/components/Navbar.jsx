@@ -7,6 +7,28 @@ function Navbar({ language, onLanguageChange, theme, onToggleTheme }) {
         { label: "Hindi", value: "hindi" },
         { label: "Hinglish", value: "hinglish" },
     ];
+    const labels = {
+        english: {
+            selectLanguage: "Select language",
+            switchTo: "Switch to",
+            light: "Light",
+            dark: "Dark",
+        },
+        hinglish: {
+            selectLanguage: "Language select karein",
+            switchTo: "Switch karein",
+            light: "Light",
+            dark: "Dark",
+        },
+        hindi: {
+            selectLanguage: "Bhasha chunen",
+            switchTo: "Badlein",
+            light: "Light",
+            dark: "Dark",
+        },
+    };
+
+    const text = labels[language] || labels.english;
 
     return (
         <nav className="navbar">
@@ -17,7 +39,7 @@ function Navbar({ language, onLanguageChange, theme, onToggleTheme }) {
                 </a>
 
                 <div className="navbar-controls">
-                    <div className="language-switch" role="group" aria-label="Select language">
+                    <div className="language-switch" role="group" aria-label={text.selectLanguage}>
                         {languages.map((item) => (
                             <button
                                 key={item.value}
@@ -35,13 +57,13 @@ function Navbar({ language, onLanguageChange, theme, onToggleTheme }) {
                         type="button"
                         className={`mode-switch ${isLightMode ? "is-light" : "is-dark"}`}
                         onClick={onToggleTheme}
-                        aria-label={`Switch to ${isLightMode ? "dark" : "light"} mode`}
+                        aria-label={`${text.switchTo} ${isLightMode ? text.dark.toLowerCase() : text.light.toLowerCase()} mode`}
                         aria-pressed={!isLightMode}
                     >
                         <span className="mode-track">
                             <span className="mode-thumb" />
                         </span>
-                        <span className="mode-label">{isLightMode ? "Light" : "Dark"}</span>
+                        <span className="mode-label">{isLightMode ? text.light : text.dark}</span>
                     </button>
                 </div>
             </div>

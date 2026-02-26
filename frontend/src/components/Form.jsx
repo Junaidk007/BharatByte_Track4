@@ -1,7 +1,7 @@
 import { useMemo, useState } from "react";
 import "./form.css";
 
-function Form({ onSearch }) {
+function Form({ onSearch, language }) {
     const occupationOptions = ["Farmer", "Student", "Self Employed", "Worker", "Salaried"];
     const categoryOptions = ["General", "OBC", "SC", "ST", "EWS"];
     const stateOptions = [
@@ -51,6 +51,104 @@ function Form({ onSearch }) {
         EWS: 4,
     };
 
+    const labels = {
+        english: {
+            age: "Age",
+            agePlaceholder: "Enter age",
+            occupation: "Occupation",
+            ownLand: "Own Agricultural Land",
+            annualIncome: "Annual Income (Rs.)",
+            upTo: "Up to",
+            category: "Category",
+            state: "State",
+            haveBusiness: "Have Business",
+            haveHomeLoan: "Have Home Loan",
+            yes: "Yes",
+            no: "No",
+            submit: "Find My Schemes",
+        },
+        hinglish: {
+            age: "Age",
+            agePlaceholder: "Age enter karein",
+            occupation: "Occupation",
+            ownLand: "Krishi zameen hai",
+            annualIncome: "Annual Income (Rs.)",
+            upTo: "Up to",
+            category: "Category",
+            state: "State",
+            haveBusiness: "Business hai",
+            haveHomeLoan: "Home loan hai",
+            yes: "Haan",
+            no: "Nahi",
+            submit: "Meri Schemes Dhoondho",
+        },
+        hindi: {
+            age: "आयु",
+            agePlaceholder: "आयु दर्ज करें",
+            occupation: "पेशा",
+            ownLand: "कृषि भूमि है",
+            annualIncome: "वार्षिक आय (Rs.)",
+            upTo: "तक",
+            category: "श्रेणी",
+            state: "राज्य",
+            haveBusiness: "व्यवसाय है",
+            haveHomeLoan: "गृह ऋण है",
+            yes: "हाँ",
+            no: "नहीं",
+            submit: "मेरी योजनाएँ खोजें",
+        },
+    };
+
+    const occupationLabels = {
+        english: {
+            Farmer: "Farmer",
+            Student: "Student",
+            "Self Employed": "Self Employed",
+            Worker: "Worker",
+            Salaried: "Salaried",
+        },
+        hinglish: {
+            Farmer: "Farmer",
+            Student: "Student",
+            "Self Employed": "Self Employed",
+            Worker: "Worker",
+            Salaried: "Salaried",
+        },
+        hindi: {
+            Farmer: "किसान",
+            Student: "विद्यार्थी",
+            "Self Employed": "स्वयं रोजगार",
+            Worker: "मज़दूर",
+            Salaried: "नौकरीपेशा",
+        },
+    };
+
+    const categoryLabels = {
+        english: {
+            General: "General",
+            OBC: "OBC",
+            SC: "SC",
+            ST: "ST",
+            EWS: "EWS",
+        },
+        hinglish: {
+            General: "General",
+            OBC: "OBC",
+            SC: "SC",
+            ST: "ST",
+            EWS: "EWS",
+        },
+        hindi: {
+            General: "General",
+            OBC: "OBC",
+            SC: "SC",
+            ST: "ST",
+            EWS: "EWS",
+        },
+    };
+
+    const text = labels[language] || labels.english;
+
     const [formData, setFormData] = useState({
         age: 25,
         annualIncome: 450000,
@@ -63,8 +161,11 @@ function Form({ onSearch }) {
     });
 
     const formattedIncome = useMemo(
-        () => new Intl.NumberFormat("en-IN").format(Number(formData.annualIncome)),
-        [formData.annualIncome]
+        () =>
+            new Intl.NumberFormat(language === "hindi" ? "hi-IN" : "en-IN").format(
+                Number(formData.annualIncome)
+            ),
+        [formData.annualIncome, language]
     );
 
     const handleInputChange = (event) => {
@@ -96,17 +197,16 @@ function Form({ onSearch }) {
             return;
         }
 
-        // Default fallback until parent integration is wired.
         console.log("Form submitted:", payload);
     };
 
-    return ( 
+    return (
         <form className="scheme-form" action="" onSubmit={handleSubmit}>
             <div className="scheme-grid">
                 <div className="form-item">
-                    <label htmlFor="age">Age</label>
+                    <label htmlFor="age">{text.age}</label>
                     <div className="input-shell">
-                        <span className="input-icon" aria-hidden="true">🗂</span>
+                        <span className="input-icon" aria-hidden="true">ID</span>
                         <input
                             id="age"
                             name="age"
@@ -114,7 +214,7 @@ function Form({ onSearch }) {
                             min="0"
                             max="120"
                             className="field-input"
-                            placeholder="Enter Age"
+                            placeholder={text.agePlaceholder}
                             value={formData.age}
                             onChange={handleInputChange}
                             required
@@ -123,9 +223,9 @@ function Form({ onSearch }) {
                 </div>
 
                 <div className="form-item">
-                    <label htmlFor="occupation">Occupation</label>
+                    <label htmlFor="occupation">{text.occupation}</label>
                     <div className="input-shell select-shell">
-                        <span className="input-icon" aria-hidden="true">🧑</span>
+                        <span className="input-icon" aria-hidden="true">OC</span>
                         <select
                             id="occupation"
                             name="occupation"
@@ -135,34 +235,36 @@ function Form({ onSearch }) {
                             required
                         >
                             {occupationOptions.map((item) => (
-                                <option key={item} value={item}>{item}</option>
+                                <option key={item} value={item}>
+                                    {(occupationLabels[language] || occupationLabels.english)[item] || item}
+                                </option>
                             ))}
                         </select>
                     </div>
                 </div>
 
                 <div className="form-item side-col">
-                    <label>Own Agricultural Land</label>
+                    <label>{text.ownLand}</label>
                     <div className="toggle-row">
                         <button
                             type="button"
                             className={`toggle-btn ${formData.hasAgriculturalLand === 1 ? "active" : ""}`}
                             onClick={() => setFormData((prev) => ({ ...prev, hasAgriculturalLand: 1 }))}
                         >
-                            Yes
+                            {text.yes}
                         </button>
                         <button
                             type="button"
                             className={`toggle-btn ${formData.hasAgriculturalLand === 0 ? "active" : ""}`}
                             onClick={() => setFormData((prev) => ({ ...prev, hasAgriculturalLand: 0 }))}
                         >
-                            No
+                            {text.no}
                         </button>
                     </div>
                 </div>
 
                 <div className="form-item">
-                    <label htmlFor="income">Annual Income (₹)</label>
+                    <label htmlFor="income">{text.annualIncome}</label>
                     <div className="income-shell">
                         <input
                             id="income"
@@ -174,14 +276,14 @@ function Form({ onSearch }) {
                             value={formData.annualIncome}
                             onChange={handleInputChange}
                         />
-                        <span className="income-pill">Up to {formattedIncome}</span>
+                        <span className="income-pill">{text.upTo} {formattedIncome}</span>
                     </div>
                 </div>
 
                 <div className="form-item">
-                    <label htmlFor="category">Category</label>
+                    <label htmlFor="category">{text.category}</label>
                     <div className="input-shell select-shell">
-                        <span className="input-icon" aria-hidden="true">👥</span>
+                        <span className="input-icon" aria-hidden="true">CT</span>
                         <select
                             id="category"
                             name="category"
@@ -191,16 +293,18 @@ function Form({ onSearch }) {
                             required
                         >
                             {categoryOptions.map((item) => (
-                                <option key={item} value={item}>{item}</option>
+                                <option key={item} value={item}>
+                                    {(categoryLabels[language] || categoryLabels.english)[item] || item}
+                                </option>
                             ))}
                         </select>
                     </div>
                 </div>
 
                 <div className="form-item">
-                    <label htmlFor="state">State</label>
+                    <label htmlFor="state">{text.state}</label>
                     <div className="input-shell select-shell">
-                        <span className="input-icon" aria-hidden="true">📍</span>
+                        <span className="input-icon" aria-hidden="true">ST</span>
                         <select
                             id="state"
                             name="state"
@@ -217,41 +321,41 @@ function Form({ onSearch }) {
                 </div>
 
                 <div className="form-item side-col">
-                    <label>Have Business</label>
+                    <label>{text.haveBusiness}</label>
                     <div className="toggle-row neutral">
                         <button
                             type="button"
                             className={`toggle-btn ${formData.hasBusiness === 1 ? "active" : ""}`}
                             onClick={() => setFormData((prev) => ({ ...prev, hasBusiness: 1 }))}
                         >
-                            Yes
+                            {text.yes}
                         </button>
                         <button
                             type="button"
                             className={`toggle-btn ${formData.hasBusiness === 0 ? "active" : ""}`}
                             onClick={() => setFormData((prev) => ({ ...prev, hasBusiness: 0 }))}
                         >
-                            No
+                            {text.no}
                         </button>
                     </div>
                 </div>
 
                 <div className="form-item side-col">
-                    <label>Have Home Loan</label>
+                    <label>{text.haveHomeLoan}</label>
                     <div className="toggle-row neutral">
                         <button
                             type="button"
                             className={`toggle-btn ${formData.hasHomeLoan === 1 ? "active" : ""}`}
                             onClick={() => setFormData((prev) => ({ ...prev, hasHomeLoan: 1 }))}
                         >
-                            Yes
+                            {text.yes}
                         </button>
                         <button
                             type="button"
                             className={`toggle-btn ${formData.hasHomeLoan === 0 ? "active" : ""}`}
                             onClick={() => setFormData((prev) => ({ ...prev, hasHomeLoan: 0 }))}
                         >
-                            No
+                            {text.no}
                         </button>
                     </div>
                 </div>
@@ -259,10 +363,10 @@ function Form({ onSearch }) {
 
             <button type="submit" className="find-btn">
                 <span aria-hidden="true"></span>
-                <span>Find My Schemes</span>
+                <span>{text.submit}</span>
             </button>
         </form>
     );
 }
-export default Form;
 
+export default Form;
